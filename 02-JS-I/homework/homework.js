@@ -86,43 +86,72 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
+  if(str1.length==str2.length)
+    return true;
+  else{
+    return false;
+  }
   
 }
+tienenMismaLongitud("str1", "str2")
 
 function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if(num<90)
+   return true;
+else{
+  return false;
 }
+}
+menosQueNoventa(50)
 
 function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if(num>50)
+  return true;
+else{
+ return false;
 }
-
+}
+mayorQueCincuenta(60)
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  
+  c=x%y
+  return c
 }
+obtenerResto(21, 5)
 
 function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
+  if(num%2==0){
+    return true
+  }else{
+    return false
+  }
+  
   
 }
+esPar(5)
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
+  if(num%2!=0){
+    return true
+  }else{
+    return false
+  }
   
 }
-
+esImpar(5)
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
@@ -213,8 +242,10 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  
+  c=(euro*1.20)/1
+  return c
 }
+deEuroAdolar(1)
 
 
 function esVocal(letra){
