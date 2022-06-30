@@ -170,30 +170,39 @@ function elevarAlCubo(num) {
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  res=1
-  for(i=1; i<=exponent; i++){
-      res=res*num
-  
-      
-}return res
+  res=Math.pow(num,exponent)
+  return res
 }
+
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  
+ 
+    r=0
+    r=Math.round(num)    
+    return r
+
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
   
+    r=0
+    if(num==num){
+      r=num+1
+    }   
+    return r
 }
+
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  
+     a=0.0
+     a=Math.random()
+     return a
 }
 
 function esPositivo(numero) {
@@ -201,20 +210,33 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  
+  a=""
+  if(numero>0){
+    a="el numero es positivo"
+  }else if(numero<0){
+    a="el numero es negativo"
+  }else{
+   a="false"
+  }
+  return a
 }
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
+      a=""
+      console.log(str+"!")
+    return a
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  
+        a=""
+        console.log(nombre+""+apellido)
+      return a
 }
 
 function obtenerSaludo(nombre) {
